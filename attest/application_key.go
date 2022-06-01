@@ -76,6 +76,8 @@ type KeyConfig struct {
 	// If nil, the default SRK (i.e. RSA with handle 0x81000001) is assumed.
 	// Supported only by TPM 2.0 on Linux.
 	Parent *ParentKeyConfig
+
+	QualifyingData []byte
 }
 
 // defaultConfig is used when no other configuration is specified.
